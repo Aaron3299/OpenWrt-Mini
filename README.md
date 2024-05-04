@@ -1,5 +1,5 @@
 <div align="center">
-<h1>OpenWrt-Mini  急速精简版，每周五-12点-云编译更新</h1>
+<h1>OpenWrt云编译更新</h1>
 </div>
 
 ## 固件说明：（支持ipv6）
@@ -14,11 +14,4 @@
 
 | 管理地址  | 默认账号 | 默认密码 |
 | ---- | ---- | ---- |
-| 192.168.2.100 | root | 无密码 |
-
-## 固件下载:   [Releases](https://github.com/TraderWukong/OpenWrt-Mini/releases) 
-
-## 固件截图
-
-![avatar](https://github.com/TraderWukong/OpenWrt-Mini/blob/main/jpg/OpenWrt-1.jpg)
-![avatar](https://github.com/TraderWukong/OpenWrt-Mini/blob/main/jpg/OpenWrt-2.jpg)
+| 192.168.2.1 | root | 无密码 |
