@@ -23,6 +23,8 @@ sed -i 's/${g}.*/${a}${b}${c}${d}${e}${f}${hydrid}/g' package/lean/autocore/file
 
 # 7-修改主机名字，把N3700修改你喜欢的就行（不能纯数字或者使用中文）
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='NAS'' package/lean/default-settings/files/zzz-default-settings
+# 版本号里显示一个自己的名字（281677160 build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
+sed -i 's/OpenWrt /不言° @ OpenWrt /g' package/lean/default-settings/files/zzz-default-settings
 
 # 8-增固件连接数
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
