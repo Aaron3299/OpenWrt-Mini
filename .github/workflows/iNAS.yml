@@ -1,4 +1,4 @@
-name:  OP_immortalwrt_NAS.config
+name:  OP_iNAS.config
 
 on: 
   workflow_dispatch:
