@@ -28,3 +28,19 @@ sed -i 's/OpenWrt /不言° /g' package/lean/default-settings/files/zzz-default-
 
 # 8-增固件连接数
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
+
+# 9-修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
+#sed -i 's/services/nas/g' feeds/luci/applications/luci-app-samba4/luasrc/controller/samba4.lua
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/feeds/luci/luci-app-turboacc/po/zh-cn/turboacc.po
+sed -i 's/nas/services/g' feeds/luci/applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json
+
+#  10-删除部分插件
+rm -rf package/lean/luci-app-netdata
+rm -rf package/lean/luci-theme-argon
+rm -rf package/lean/luci-app-uugamebooster
+rm -rf package/lean/luci-app-usb-printer
+rm -rf feeds/luci/applications/luci-app-transmission
+rm -rf feeds/packages/net/transmission
+rm -rf feeds/packages/net/transmission-web-control
+rm -rf feeds/packages/net/msd_lite
+rm -rf feeds/luci/applications/luci-app-msd_lite
