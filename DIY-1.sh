@@ -11,6 +11,7 @@ rm -rf feeds/luci/applications/luci-app-serverchan
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-rclone
 rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-vlmcsd
 
 # 1-添加 ShadowSocksR Plus+ 插件
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
